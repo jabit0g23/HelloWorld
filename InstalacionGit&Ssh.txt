@@ -1,0 +1,24 @@
+En ubuntu y en general sistemas de unix viene por defecto instalado git, sin embargo podemos actualizarlo con:
+
+sudo apt update
+sudo apt upgrade git
+
+luego para la instalacion en nuestro pc de una clave ssh debemos seguir la guia de la pagina: 
+https://docs.github.com/es/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+basicamente para linux:
+
+$ ssh-keygen -t ed25519 -C "your_email@example.com"
+> Enter a file in which to save the key (/home/YOU/.ssh/ALGORITHM):[Press enter]
+> Enter passphrase (empty for no passphrase): [Type a passphrase]
+> Enter same passphrase again: [Type passphrase again]
+
+$ eval "$(ssh-agent -s)"
+> Agent pid 59566
+
+$ ssh-add ~/.ssh/id_ed25519
+
+luego debemos ir a la carpeta donde la creamos, con cd ./ssh, copiar lo que esta dentro del public y ir a github, ir al apartado de añadir un nuevo ssh y crearlo copiando lo de el .pub
+
+$ ssh -T git@github.com (para ver que todo este funcionando correctamente)
+
