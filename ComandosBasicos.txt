@@ -1,3 +1,5 @@
+v====================================================================================================================
+
 Para cuando creamos un repositorio nuevo:
 
 echo "# NombreRepositorio" >> README.md
@@ -8,5 +10,50 @@ git branch -M main
 git remote add origin git@github.com:jabit0g23/NombreRepositorio.git
 git push -u origin main
 
+====================================================================================================================
 
+Trabajo con cambios locales:
+
+git add <nombre del archivo>: Agrega un archivo específico al área de preparación (staging area).
+git add .: Agrega todos los archivos modificados y eliminados al área de preparación.
+git commit -m "Mensaje del commit": Crea un nuevo commit con los cambios agregados en el área de preparación.
+git status: Muestra el estado actual del repositorio y los cambios pendientes.
+
+====================================================================================================================
+
+Trabajo con ramas:
+
+git branch: Muestra una lista de las ramas en el repositorio.
+git branch <nombre de la rama>: Crea una nueva rama.
+git checkout <nombre de la rama>: Cambia a una rama específica.
+git merge <nombre de la rama>: Fusiona una rama con la rama actual.
+git branch -d <nombre de la rama>: Elimina una rama específica.
+
+====================================================================================================================
+
+Trabajo con repositorios remotos (GitHub):
+
+git remote add origin <URL del repositorio>: Agrega un repositorio remoto como origen (origin).
+git push -u origin <nombre de la rama>: Sube los cambios locales a un repositorio remoto.
+git pull origin <nombre de la rama>: Obtiene y fusiona los cambios desde un repositorio remoto.
+git clone <URL del repositorio>: Clona un repositorio remoto en un directorio local.
+
+====================================================================================================================
+
+Otros comandos útiles:
+
+git log: Muestra un registro de commits en orden cronológico.
+git diff: Muestra las diferencias entre los cambios locales y el último commit.
+git reset <nombre del archivo>: Desecha los cambios locales en un archivo específico.
+git stash: Guarda temporalmente los cambios no comprometidos en una pila (stash).
+git revert <ID del commit>: Crea un nuevo commit que revierte los cambios realizados en un commit anterior.
+git fetch: Descarga los últimos cambios del repositorio remoto, pero no los fusiona automáticamente.
+git branch -r: Muestra una lista de las ramas remotas en el repositorio.
+git checkout -b <nombre de la rama>: Crea una nueva rama y cambia a ella en un solo comando.
+git remote -v: Muestra una lista de los repositorios remotos configurados.
+git log --oneline: Muestra un registro de commits en una sola línea por cada commit.
+git cherry-pick <ID del commit>: Aplica los cambios de un commit específico a la rama actual.
+git rebase <rama base>: Reaplica los commits de la rama actual sobre otra rama base.
+
+====================================================================================================================
 
