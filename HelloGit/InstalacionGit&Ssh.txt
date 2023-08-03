@@ -22,3 +22,8 @@ luego debemos ir a la carpeta donde la creamos, con cd ./ssh, copiar lo que esta
 
 $ ssh -T git@github.com (para ver que todo este funcionando correctamente)
 
+Configuración inicial:
+
+git config --global user.name "jabit0g23": Configura el nombre de usuario para los commits.
+git config --global user.email "jabit0g23@gmail.com": Configura la dirección de correo electrónico para los commits.
+git init: Inicializa un repositorio Git en un directorio local.

@@ -1,0 +1,16 @@
+
+body{
+    background-color: #222222;
+}
+
+.container{
+    background-color: azure;
+}
+
+.col{
+    height: 100px;
+    min-width: 100px;
+    max-width: 23%;
+    background-color: aquamarine;
+    margin: 5px;
+}
