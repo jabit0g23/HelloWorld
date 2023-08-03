@@ -1,5 +1,7 @@
 // DOM, Document Object Model
 
+
+
 // document - Metodos de seleccion de elementos
 
 // Selecciona un elemento por ID
@@ -17,6 +19,8 @@ let parrafo2 = document.querySelector(".parrafo2");
 parrafo = document.querySelectorAll(".parrafo");
 // document.write(parrafo[1])
 
+
+
 // Metodos para Definir, obtener y Eliminar valores de atributos
 
 const rangoEtario = document.querySelector(".rangoEtario");
@@ -29,6 +33,9 @@ document.write("  <br> despues: " + rangoEtario.getAttribute("type"));
 // - Remueve el valor de un atributo
 rangoEtario.removeAttribute("type");
 document.write("  <br> finalmente: " + rangoEtario.getAttribute("type"));
+
+
+
 
 // clases, classlist y Metodos de classList
 
@@ -45,6 +52,8 @@ rangoEtario.classList.replace("viejaClase", "nuevaClase");
 // - si no tiene la clase especificada, la agrega, si ya la tiene, la elimina.
 rangoEtario.classList.toggle("claseToggle");
 
+
+
 // obtención y Modificación de Elementos
 
 const titulo = document.querySelector(".titulo");
@@ -55,6 +64,8 @@ let textoTitulo = titulo.textContent;
 let contenidoHTMLTitulo = titulo.innerHTML;
 // - devuelve el codigo HTML completo del elemento
 let codigoHTMLTitulo = titulo.outerHTML;
+
+
 
 // Creación de Elementos
 
@@ -93,6 +104,9 @@ let ultimoHijo = contenedor.lastElementChild;
 // - Devuelve todos los hijos del elemento en un array-like object.
 let hijos = contenedor.children;
 
+
+
+
 // Metodos de childs (Hijos)
 
 // - Agrega un nodo como el último hijo del elemento.
@@ -105,12 +119,18 @@ contenedor.removeChild(nuevoElemento);
 // - Verifica si el elemento tiene hijos o no.
 let tieneHijos = contenedor.hasChildNodes();
 
+
+
+
 // Propiedades de parents (Padres)
 
 // - Devuelve el elemento padre del elemento actual.
 let padreElemento = contenedor.parentElement;
 // - Devuelve el nodo padre del elemento actual (puede ser un nodo de texto, un elemento o el Document).
 let padreNodo = contenedor.parentNode;
+
+
+
 
 // Propiedades de siblings (Hermanos)
 
