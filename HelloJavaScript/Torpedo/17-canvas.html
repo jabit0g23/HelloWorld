@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Uso del Objeto Canvas</title>
+</head>
+<body>
+  <!-- Crear el elemento canvas en el HTML -->
+  <canvas id="myCanvas" width="400" height="300"></canvas>
+
+  <script>
+    // Obtener el contexto del lienzo
+    const canvas = document.getElementById("myCanvas");
+    const context = canvas.getContext("2d");
+
+    // Dibujar un rectángulo
+    context.fillStyle = "blue";
+    context.fillRect(50, 50, 100, 100);
+
+    // Dibujar una línea
+    context.strokeStyle = "red";
+    context.lineWidth = 3;
+    context.beginPath();
+    context.moveTo(200, 50);
+    context.lineTo(300, 150);
+    context.stroke();
+
+    // Dibujar un círculo
+    context.fillStyle = "green";
+    context.beginPath();
+    context.arc(150, 200, 50, 0, Math.PI * 2);
+    context.fill();
+
+    // Crear una animación sencilla
+    let x = 0;
+
+    function animate() {
+      context.clearRect(0, 0, canvas.width, canvas.height);
+
+      context.fillStyle = "orange";
+      context.fillRect(x, 100, 50, 50);
+
+      x += 1;
+      if (x > canvas.width) {
+        x = 0;
+      }
+
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  </script>
+</body>
+</html>
