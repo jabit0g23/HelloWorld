@@ -1,4 +1,3 @@
-# Clase en vídeo: https://youtu.be/Kp4Mvapo5kc?t=10872
 
 ### Lists ###
 
@@ -14,7 +13,7 @@ my_list = [35, 24, 62, 52, 30, 30, 17]
 print(my_list)
 print(len(my_list))
 
-my_other_list = [35, 1.77, "Brais", "Moure"]
+my_other_list = [10, 12.2, "A", "B"]
 
 print(type(my_list))
 print(type(my_other_list))
@@ -29,7 +28,7 @@ print(my_list.count(30))
 # print(my_other_list[4]) IndexError
 # print(my_other_list[-5]) IndexError
 
-print(my_other_list.index("Brais"))
+print(my_other_list.index("B"))
 
 age, height, name, surname = my_other_list
 print(name)
@@ -44,7 +43,7 @@ print(my_list + my_other_list)
 
 # Creación, inserción, actualización y eliminación
 
-my_other_list.append("MoureDev")
+my_other_list.append("asd")
 print(my_other_list)
 
 my_other_list.insert(1, "Rojo")
